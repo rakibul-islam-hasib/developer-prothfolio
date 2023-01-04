@@ -1,0 +1,27 @@
+*
+{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Header css Start */
+.nav_title
+{
+    font-weight: 800;
+    font-size: 45px;
+}
+nav
+{
+    display: flex;
+}
+nav li
+{
+    list-style: none;
+}
+nav ul
+{
+    display: flex;
+}
+.text-primary
+{
+    color: #FD6E0A;
+}
