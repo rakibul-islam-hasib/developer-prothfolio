@@ -105,5 +105,18 @@ main
 }
 .a-i-c
 {
-    
+    display: flex;
+    justify-content: space-around;
+}
+.about_me .info-title
+{
+    font-size: 20px;
+    font-weight: 400;
+    color: #757575;
+}
+.info-des
+{
+    font-size: 20px;
+    font-weight: 800;
+    color: #474747;
 }
