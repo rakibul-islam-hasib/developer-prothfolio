@@ -200,14 +200,71 @@ main {
     font-size: 16px;
     color: #757575;
 }
-.res_btn
-{
+
+.res_btn {
     margin-top: 50px;
     text-align: center;
 }
+
 /* Footer part start */
-.contact .s-title
-{
+.contact .s-title {
     text-align: left;
-    
+
+}
+
+.contact {
+    display: flex;
+    gap: 110px;
+    background: #FFF8F3;
+    margin-top: 113px;
+    padding: 130px 200px;
+}
+
+.contact input[type="text"],
+input[type="email"] {
+    margin-bottom: 24px;
+    border: 0;
+    width: 461px;
+    height: 64px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1.1em;
+}
+
+.textarea {
+    border: 0;
+    width: 461px;
+    height: 180px;
+    resize: none;
+    padding-top: 18px;
+    padding-left: 30px;
+    font-size: 1.2em;
+    margin-bottom: 24px;
+}
+
+input {
+    height: 64px;
+}
+
+
+/* footer title customise */
+.s-title-f {
+    font-weight: 700;
+    font-size: 35px;
+    color: #181818;
+    padding-bottom: 25px;
+}
+
+.f-p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #474747;
+}
+/* Footer final  */
+.contact a
+{
+    text-decoration: none;
 }
