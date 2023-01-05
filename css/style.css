@@ -51,6 +51,7 @@ nav ul {
     background-image: url(../images/header_bg.png),url(../images/developer.png);
     background-repeat: no-repeat;
     background-position: bottom right, left ;
+    background-position-x: 100%,20px;
 }
 
 /* banner css start */
@@ -59,6 +60,7 @@ nav ul {
     margin: 0 200px;
     align-items: center;
 }
+
 
 .banner_title {
     font-weight: 700;
@@ -290,4 +292,11 @@ input {
 #docx
 {
     color: #FD6E0A;
+}
+/* Extra  */
+
+.skill
+{
+    align-items: center;
+    text-align: center;
 }
