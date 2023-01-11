@@ -146,7 +146,7 @@ main {
 
 .skill-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
@@ -276,6 +276,17 @@ input {
 
 }
 
+.so-ico {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+.so-ico img
+{
+    width: 3vw;
+    margin-left: 10px;
+}
+
 
 /* Header Contact Button */
 .btn_2 {
@@ -301,20 +312,95 @@ input {
     align-items: center;
     text-align: center;
 }
+
 /* Resposive part start  */
 @media screen and (max-width:576px) {
-    .what-i-do
-    {
+    .what-i-do {
         padding: 15px;
     }
-    .skill-container
+
+    .skill-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .about_me {
+        padding: 20px;
+    }
+
+    .a-i-c {
+        flex-direction: column;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 15px 15px;
+    }
+
+    .contact input[type="text"],
+    input[type="email"],
+    .textarea {
+        width: 80vw;
+        height: 7vh;
+    }
+
+    .textarea {
+        height: 15vh;
+    }
+
+    #footer_btn {
+        margin-left: 30vw;
+    }
+
+    .s-title-f,
+    .f-p {
+        text-align: center;
+    }
+    .so-ico img {
+        width: 4vw;
+    }
+    .resume-container
     {
-        grid-template-columns: repeat(1,1fr);
+        text-align: center;
     }
 }
 
+@media screen and (min-width:577px) and (max-width:997px) {
+    .contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 15px;
+    }
 
-.hide 
-{
+    .s-title-f,
+    .f-p {
+        text-align: center;
+    }
+
+    #footer_btn {
+        position: relative;
+        left: 18vw;
+    }
+
+    ..so-ico img {
+        width: 3vw;
+    }
+    .resume-container {
+        flex-direction: column;
+    }
+    .resume-container
+    {
+        text-align: center;
+    }
+    .skill-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.hide {
     display: none;
 }
