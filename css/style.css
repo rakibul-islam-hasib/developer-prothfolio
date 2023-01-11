@@ -41,17 +41,17 @@ nav ul {
     font-size: 20px;
 
 }
-.header_title li
-{
+
+.header_title li {
     font-size: 1.2em;
 }
 
 .header {
     background: #FFF8F3;
-    background-image: url(../images/header_bg.png),url(../images/developer.png);
+    background-image: url(../images/header_bg.png), url(../images/developer.png);
     background-repeat: no-repeat;
-    background-position: bottom right, left ;
-    background-position-x: 100%,20px;
+    background-position: bottom right, left;
+    background-position-x: 100%, 20px;
 }
 
 /* banner css start */
@@ -145,7 +145,8 @@ main {
 }
 
 .skill-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap: 24px;
 }
 
@@ -289,14 +290,31 @@ input {
     text-align: center;
     color: #FD6E0A;
 }
-#docx
-{
+
+#docx {
     color: #FD6E0A;
 }
+
 /* Extra  */
 
-.skill
-{
+.skill {
     align-items: center;
     text-align: center;
+}
+/* Resposive part start  */
+@media screen and (max-width:576px) {
+    .what-i-do
+    {
+        padding: 15px;
+    }
+    .skill-container
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+.hide 
+{
+    display: none;
 }
