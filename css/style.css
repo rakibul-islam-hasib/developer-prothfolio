@@ -169,6 +169,7 @@ main {
     box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
     border-radius: 5px;
     padding: 30px;
+    cursor: pointer;
 }
 
 /* resume Part Start */
@@ -424,19 +425,22 @@ input {
         align-items: center;
         padding: 15px 15px;
     }
+
     nav {
         /* flex-direction: column; */
         padding-left: 15vw;
         position: sticky;
 
     }
+
     .banner img {
         width: 85%;
     }
-    .banner
-    {
+
+    .banner {
         margin-left: 5vw;
     }
+
     .s-title-f,
     .f-p {
         text-align: center;
@@ -447,7 +451,7 @@ input {
         left: 18vw;
     }
 
-    ..so-ico img {
+    .so-ico img {
         width: 3vw;
     }
 

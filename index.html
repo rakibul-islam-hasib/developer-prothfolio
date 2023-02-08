@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,700;1,800&display=swap"
         rel="stylesheet">
@@ -73,30 +74,30 @@
         <!-- what i do part start -->
         <section class="what-i-do">
             <h3 class="s-title">What I Do</h3>
-            <p class="w-h-pragraph">I have more than 10 years experience building software for clients all over the
+            <p class="w-h-pragraph" data-aos="flip-up">I have more than 10 years experience building software for clients all over the
                 world. Below is a quick overview of my main technical skill sets and technologies i use. Want to find
                 out more about my experience? Check out my online resume and project portfolio.</p>
             <!-- skill part start -->
-            <div class="skill-container">
-                <div class="skill">
+            <div class="skill-container" >
+                <div class="skill" data-aos="fade-right">
                     <img src="images/icons/js.png" alt="">
                     <p class="skill-title">Vanilla JavaScript</p>
                     <p class="skill-des">List skill/technologies here. You can change the icon above to any of the 1500+
                         FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-down">
                     <img src="images/icons/react.png" alt="">
                     <p class="skill-title">React</p>
                     <p class="skill-des">List skill/technologies here. You can change the icon above to any of the 1500+
                         FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-down">
                     <img src="images/icons/nodejs.png" alt="">
                     <p class="skill-title">Node.js</p>
                     <p class="skill-des">List skill/technologies here. You can change the icon above to any of the 1500+
                         FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-left">
                     <img src="images/icons/mongo.png" alt="">
                     <p class="skill-title">MongoDB </p>
                     <p class="skill-des">List skill/technologies here. You can change the icon above to any of the 1500+
@@ -106,18 +107,18 @@
         </section>
         <!-- Resume Part Start -->
         <section class="resume">
-            <h3 class="s-title">A summary of My Resume</h3>
-            <div class="resume-container">
+            <h3 class="s-title" data-aos="flip-left">A summary of My Resume</h3>
+            <div class="resume-container" data-aos="fade-in">
                 <div>
                     <h3 class="res-title">My Education</h3>
-                    <div class="res-item">
+                    <div class="res-item " data-aos="fade-down-right">
                         <h4 class="title">Master in Computer Engineering</h4>
                         <h5 class="sub-title">Harvard University / 2015 - 2017</h5>
                         <p class="description">List skill/technologies here. You can change the icon above to any of the
                             1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
                     </div>
                     <hr>
-                    <div class="res-item">
+                    <div class="res-item" data-aos="fade-down-right">
                         <h4 class="title">Master in Computer Engineering</h4>
                         <h5 class="sub-title">Harvard University / 2015 - 2017</h5>
                         <p class="description">List skill/technologies here. You can change the icon above to any of the
@@ -125,7 +126,7 @@
                     </div>
                     <hr>
 
-                    <div class="res-item">
+                    <div class="res-item" data-aos="fade-down-right">
                         <h4 class="title">Master in Computer Engineering</h4>
                         <h5 class="sub-title">Harvard University / 2015 - 2017</h5>
                         <p class="description">List skill/technologies here. You can change the icon above to any of the
@@ -135,21 +136,21 @@
                 </div>
                 <div>
                     <h3 class="res-title">My Experience</h3>
-                    <div class="res-item">
+                    <div class="res-item " data-aos="fade-down-left">
                         <h4 class="title">Sr. Font End Developer</h4>
                         <h5 class="sub-title">Apple Inc / 2020 - Current</h5>
                         <p class="description">List skill/technologies here. You can change the icon above to any of the
                             1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
                     </div>
                     <hr>
-                    <div class="res-item">
+                    <div class="res-item" data-aos="fade-down-left">
                         <h4 class="title">Jr. Font End Developer</h4>
                         <h5 class="sub-title">Dribbble Inc / 2018 - 2022</h5>
                         <p class="description">List skill/technologies here. You can change the icon above to any of the
                             1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
                     </div>
                     <hr>
-                    <div class="res-item">
+                    <div class="res-item" data-aos="fade-down-left">
                         <h4 class="title">HTML Developer</h4>
                         <h5 class="sub-title">Adobe Inc / 2017 - 2018</h5>
                         <p class="description">List skill/technologies here. You can change the icon above to any of the
@@ -159,7 +160,7 @@
 
                 </div>
             </div>
-            <div class="res_btn">
+            <div class="res_btn" data-aos="flip-right" data-aos-duration="500">
                 <button class="btn_primary">Download CV <i class="fa-solid fa-download"></i></button>
             </div>
         </section>
@@ -196,6 +197,14 @@
             </div>
         </section>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200, 
+            delay: 600
+        });
+    </script>
 </body>
 
 </html>
